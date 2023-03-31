@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="style.css">
+</head>    
+<body>
+    <div class="calculator">
+    <input type="text" id="result" class="output" placeholder="0"></td>
+    <div class="keys">
+        <input type="button" value="+" class="key key-op" onClick="display('+')"></input>
+        <input type="button" value="-" class="key key-op" onClick="display('-')"></input>
+        <input type="button" value="&times" class="key key-op" onClick="display('*')"></input>
+        <input type="button" value="/" class="key key-op" onClick="display('/')"></input>
+        <input type="button" value="7" class="key" onClick="display('7')"></input>
+        <input type="button" value="8" class="key" onClick="display('8')"></input>
+        <input type="button" value="9" class="key" onClick="display('9')"></input>
+        <input type="button" value="4" class="key" onClick="display('4')"></input>
+        <input type="button" value="5" class="key" onClick="display('5')"></input>
+        <input type="button" value="6" class="key" onClick="display('6')"></input>
+        <input type="button" value="1" class="key" onClick="display('1')"></input>
+        <input type="button" value="2" class="key" onClick="display('2')"></input>
+        <input type="button" value="3" class="key" onClick="display('3')"></input>
+        <input type="button" value="0" class="key" onClick="display('0')"></input>
+        <input type="button" value="." class="key" onClick="display('.')"></input>
+        <input type="button" value="C" class="key" onclick="clearScreen()"></input>
+        <input type="button" value="=" class="key key-ent" onClick="solve()"></input>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

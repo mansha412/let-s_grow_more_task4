@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #dddddd;
+}
+
+.calculator {
+    border-radius: 10px;
+    width: 370px;
+    overflow: hidden;
+    color: #696666;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f7fcff;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px #b5b7bb,
+        -3px -3px 3px #c5c7ca;
+}
+
+.output {
+    font-size: 3.4em;
+    text-align: end;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border: none;
+    display: block;
+    outline: none;
+    color: #666363;
+    background: transparent;
+    box-shadow: inset 3px 3px 3px #a3a3a7,
+        inset -3px -3px 3px #464647;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+
+}
+
+.key {
+    background: #1a1919;
+    border: none;
+    font-size: 1.5rem;
+    width: 70px;
+    height: 70px;
+    margin: 0.3rem;
+    cursor: pointer;
+    color: #5c5858;
+    border-radius: 30px;
+    background: #b5b5bb;
+    box-shadow: 3px 3px 3px #17181c,
+        -3px -3px 3px #676e7e;
+}
+
+.key:active,
+.key:focus {
+    background: #302f2f;
+    box-shadow: inset 7px 7px 13px #9d9d9d,
+        inset -7px -7px 13px #817d7d;
+    background: #3b3f48 !important;
+    box-shadow: inset 3px 3px 3px #17181c,
+        inset -3px -3px 3px #0f0f0f;
+}
+
+.key-op {
+    color: #000000;
+}
+
+.key-ent {
+    grid-column: 4 / 5;
+    grid-row: 2 / span 4;
+    height: auto;
+    border-radius: 30px;
+    color: rgb(8, 8, 8);
+}
